@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import Navbar from './components/Navbar';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { motion, AnimatePresence } from "framer-motion";
+
+import About from './pages/About';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+
+import MobileNav from './components/MobileNav';
 
 function App() {
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='flex'>
+      <MobileNav />
+      <Navbar />
+      <div className='flex flex-col justify-around items-center overflow-y-auto w-screen h-screen bg-gradient-to-r from-primary to-secondary'>
+          <AnimatePresence mode="wait">
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </AnimatePresence>
+      </div>
     </div>
+   
   );
 }
 
