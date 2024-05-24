@@ -10,12 +10,16 @@ module.exports = {
 
     fontFamily: {
       SCP: ["Source Code Pro", "monospace"],
+      Poppins: ["Poppins", "sans-serif"]
     },
 
     extend: {
       colors : {
         primary : '#FFD700',
         secondary : "#FFB400"
+      },
+      screens : {
+        'smp' : '1100px'
       },
     },
   },

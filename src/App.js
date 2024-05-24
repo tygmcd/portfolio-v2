@@ -14,7 +14,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className='flex'>
+    <div className='flex font-Poppins'>
       <MobileNav />
       <Navbar />
       <div className='flex flex-col justify-around items-center overflow-y-auto w-screen h-screen bg-gradient-to-r from-primary to-secondary'>

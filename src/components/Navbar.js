@@ -19,7 +19,7 @@ const Navbar = () => {
     
 
     return (
-        <nav className="hidden shadow-xl sticky top-0 sm:flex flex-col flex-shrink-0 text-gray-500 items-center w-72 h-screen bg-neutral-200 gap-10">
+        <nav className="hidden shadow-xl sticky top-0 sm:flex flex-col flex-shrink-0 text-gray-500 items-center w-72 h-screen bg-neutral-200 gap-10 overflow-y-auto">
             <div className='flex flex-col items-center gap-10 mt-10 h-1/2'>
                 <div className='w-1/3'>
                     <img src={logo} alt="Logo"></img>

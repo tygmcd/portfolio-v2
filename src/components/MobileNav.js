@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import { Link } from "react-router-dom"
 
 import { ImMenu } from "react-icons/im";
@@ -36,41 +36,46 @@ const MobileNav = () => {
     return (
         <>
             <button onClick={() => setIsOpen(!isOpen)} className="sm:hidden fixed top-6 left-6 z-20 text-black">{isOpen ? <IoMdCloseCircle size={40} /> : <ImMenu size={40} />}</button>
-            <motion.div className={`sm:hidden ${isOpen ? 'fixed' : 'hidden'} bg-neutral-200 h-screen w-screen z-10 flex flex-col gap-10 pt-36 pl-28`}
-                variants={containerVariants}
-                initial="hidden"
-                animate={isOpen ? "visible" : "hidden"}
-            >
-                <Link to="/">
-                    <motion.button onClick={() => setIsOpen(!isOpen)} className="text-6xl border-b-4 border-neutral-500 pb-2" 
-                        variants={childVariants}
-                        whileHover={{ opacity: 0.5 }}>
-                        Home
-                    </motion.button>
-                </Link>
-                <Link to="/about">
-                    <motion.button  onClick={() => setIsOpen(!isOpen)} className="text-6xl border-b-4 border-neutral-500 pb-2" 
-                        variants={childVariants}
-                        whileHover={{ opacity: 0.5 }}>
-                        About
-                    </motion.button>
-                </Link>
-                <Link to="/projects">
-                    <motion.button onClick={() => setIsOpen(!isOpen)} className="text-6xl border-b-4 border-neutral-500 pb-2" 
-                        variants={childVariants}
-                        whileHover={{ opacity: 0.5 }}>
-                        Projects
-                    </motion.button>
-                </Link>
-                <Link to="/contact">
-                    <motion.button onClick={() => setIsOpen(!isOpen)} className="text-6xl border-b-4 border-neutral-500 pb-2" 
-                        variants={childVariants}
-                        whileHover={{ opacity: 0.5 }}>
-                        Contact
-                    </motion.button>
-                </Link>
+            <AnimatePresence>
+                {isOpen && (
+                <motion.div className={`sm:hidden ${isOpen ? 'fixed' : 'hidden'} bg-neutral-200 h-screen w-screen z-10 flex flex-col gap-10 pt-36 pl-28`}
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit={{scale: 0, opacity: 0, transition: { duration: 0.25 }}}
+                >
+                    <Link to="/">
+                        <motion.button onClick={() => setIsOpen(!isOpen)} className="text-6xl border-b-4 border-neutral-500 pb-2" 
+                            variants={childVariants}
+                            whileHover={{ opacity: 0.5 }}>
+                            Home
+                        </motion.button>
+                    </Link>
+                    <Link to="/about">
+                        <motion.button  onClick={() => setIsOpen(!isOpen)} className="text-6xl border-b-4 border-neutral-500 pb-2" 
+                            variants={childVariants}
+                            whileHover={{ opacity: 0.5 }}>
+                            About
+                        </motion.button>
+                    </Link>
+                    <Link to="/projects">
+                        <motion.button onClick={() => setIsOpen(!isOpen)} className="text-6xl border-b-4 border-neutral-500 pb-2" 
+                            variants={childVariants}
+                            whileHover={{ opacity: 0.5 }}>
+                            Projects
+                        </motion.button>
+                    </Link>
+                    <Link to="/contact">
+                        <motion.button onClick={() => setIsOpen(!isOpen)} className="text-6xl border-b-4 border-neutral-500 pb-2" 
+                            variants={childVariants}
+                            whileHover={{ opacity: 0.5 }}>
+                            Contact
+                        </motion.button>
+                    </Link>
 
-            </motion.div>
+                </motion.div>
+                )}
+            </AnimatePresence>
 
         </>
     );
