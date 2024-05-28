@@ -1,5 +1,4 @@
 import pic1 from '..//images/lulu.jpg';
-import pic2 from '..//images/boys.jpg';
 
 import { motion } from "framer-motion";
 
@@ -58,7 +57,7 @@ const About = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit laoreet id donec ultrices tincidunt arcu non. Vulputate ut pharetra sit amet. Ultricies leo integer malesuada nunc vel risus. Nulla facilisi etiam dignissim diam quis. A erat nam at lectus urna duis convallis convallis tellus. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Vitae congue eu consequat ac felis donec. Molestie nunc non blandit massa enim. Tempus egestas sed sed risus pretium quam. Quisque non tellus orci ac auctor augue mauris augue. Egestas congue quisque egestas diam in arcu cursus euismod. Lacinia quis vel eros donec ac odio. Mauris ultrices eros in cursus turpis massa tincidunt. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Orci nulla pellentesque dignissim enim sit amet. Feugiat in ante metus dictum at tempor commodo ullamcorper a.
                     </div>
                     <div className='flex w-full smp:w-1/2 lg:w-2/5 justify-center smp:justify-end items-center'>
-                        <img src={pic1} alt="Picture with my dog, Lulu" className='w-64 smp:w-72 lg:w-80 rounded-lg shadow-lg'></img>
+                        <img src={pic1} alt="My dog, Lulu" className='w-64 smp:w-72 lg:w-80 rounded-lg shadow-lg'></img>
                     </div>
 
                 </div>
