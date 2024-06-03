@@ -19,7 +19,8 @@ module.exports = {
         secondary : "#FFB400"
       },
       screens : {
-        'smp' : '1100px'
+        'smp' : '1100px',
+        'pof' : '1335px'
       },
     },
   },

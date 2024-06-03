@@ -75,14 +75,14 @@ const Projects = () => {
             animate="visible"
             exit={{x: "-100vw", transition: { duration: 0.5 }}}
             className="flex flex-col w-10/12 justify-center gap-12 my-16">
-                <div className='flex flex-col items-center gap-3'>
+                <div className='flex flex-col items-center gap-3 mb-3'>
                     <h1 className='text-6xl'><b>Projects</b></h1>
-                    <h3 className='text-2xl'>What I've been working on</h3>
+                    <h3 className='text-xl md:text-2xl'>What I've been working on</h3>
                 </div>
 
                 <motion.div 
                     variants={childVariants}
-                    className="absolute flex items-center justify-center rounded-t-lg text-lg top-[7rem] left-6 font-semibold w-32 h-10 backdrop-blur-lg bg-white/50">
+                    className="absolute flex items-center justify-center rounded-t-lg text-lg top-[7.8rem] left-6 font-semibold w-32 h-10 backdrop-blur-lg bg-white/50">
                     My Stack
                 </motion.div>
                 <div className='flex justify-center w-full rounded-xl backdrop-blur-lg bg-white/30 py-3 shadow-lg overflow-x-auto'>
@@ -104,7 +104,7 @@ const Projects = () => {
                         <img className="w-12" src={flask} alt="flask logo"></img>
                     </div>
                 </div>
-                <div className="grid grid-cols-3 h-96 gap-6">
+                <div className="grid grid-rows-3 md:grid-rows-1 grid-cols-1 md:grid-cols-3 h-full gap-3">
                     <ProjectCard img={as} content={actionSudokuContent}/>
                     <ProjectCard img={mw} content={musicWeatherContent}/>
                     <ProjectCard img={kb} content={kanbanContent} />

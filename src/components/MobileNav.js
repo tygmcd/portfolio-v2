@@ -38,7 +38,7 @@ const MobileNav = () => {
             <button onClick={() => setIsOpen(!isOpen)} className="sm:hidden fixed top-6 left-6 z-20 text-black">{isOpen ? <IoMdCloseCircle size={40} /> : <ImMenu size={40} />}</button>
             <AnimatePresence>
                 {isOpen && (
-                <motion.div className={`sm:hidden ${isOpen ? 'fixed' : 'hidden'} bg-neutral-200 h-screen w-screen z-10 flex flex-col gap-10 pt-36 pl-28`}
+                <motion.div className={`sm:hidden ${isOpen ? 'fixed' : 'hidden'} bg-neutral-200 h-screen w-screen z-10 flex flex-col gap-10 justify-center items-center`}
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
