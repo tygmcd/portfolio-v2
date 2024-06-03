@@ -19,7 +19,6 @@ import ProjectCard from "../components/ProjectCard";
 
 import as from '..//images/actionsudoku.png';
 import mw from '..//images/musicweather.png';
-import p477 from '..//images/portfolio-477.png';
 import kb from '..//images/kanban.png';
 
 const containerVariants = {

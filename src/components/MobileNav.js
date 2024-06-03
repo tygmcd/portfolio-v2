@@ -4,8 +4,6 @@ import { Link } from "react-router-dom"
 
 import { ImMenu } from "react-icons/im";
 import { IoMdCloseCircle } from "react-icons/io";
-import MobileNavLink from "./MobileNavLink";
-
 
 const MobileNav = () => {
     const [isOpen, setIsOpen] = useState(false);
