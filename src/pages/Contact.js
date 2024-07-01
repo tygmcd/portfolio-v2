@@ -51,12 +51,13 @@ const Contact = () => {
             className='flex flex-col w-full justify-center items-center gap-10 my-16'>
                 <div className='flex flex-col items-center gap-3'>
                     <h1 className='text-4xl md:text-6xl'><b>Contact Me</b></h1>
+                    <h3 className='text-xl sm:text-2xl text-center'>Let me know what's on your mind</h3>
                 </div>
             
                 <form ref={form} onSubmit={sendEmail} className="flex flex-col w-full justify-center items-center gap-6">
-                    <input className='w-2/3 md:w-1/2 bg-transparent border-b-2 border-black placeholder-black text-lg p-3 focus:outline-none' placeholder='Name' name='from_name'></input>
-                    <input className='w-2/3 md:w-1/2 bg-transparent border-b-2 border-black placeholder-black text-lg p-3 focus:outline-none' placeholder='Email' name='from_email'></input>
-                    <textarea className='w-2/3 md:w-1/2 h-52 bg-transparent border-2 border-black placeholder-black text-lg rounded-md p-3 mt-2 focus:outline-none' placeholder='Enter your message here...' name='message'></textarea>
+                    <input className='w-2/3 md:w-1/2 bg-transparent border-b-2 border-black placeholder-black text-xl p-2 focus:outline-none' placeholder='Name' name='from_name'></input>
+                    <input className='w-2/3 md:w-1/2 bg-transparent border-b-2 border-black placeholder-black text-xl p-2 focus:outline-none' placeholder='Email' name='from_email'></input>
+                    <textarea className='w-2/3 md:w-1/2 h-52 bg-transparent border-2 border-black placeholder-black text-xl rounded-md p-3 mt-2 focus:outline-none' placeholder='Enter your message here...' name='message'></textarea>
                     <motion.input whileHover={{ opacity: 0.7 }} className='w-2/3 md:w-1/2 h-14 bg-neutral-200 rounded-md shadow-md text-xl cursor-pointer' type="submit" value="Send"></motion.input>
                 </form>
 

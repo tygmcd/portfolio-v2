@@ -52,9 +52,29 @@ const About = () => {
                     </div>
                 </div>
                 <div className='flex flex-col smp:flex-row w-full justify-center gap-10'>
-                    <div className='flex w-full smp:w-1/2 lg:w-3/5 h-56 smp:h-96 no-scrollbar overflow-auto text-lg'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit laoreet id donec ultrices tincidunt arcu non. Vulputate ut pharetra sit amet. Ultricies leo integer malesuada nunc vel risus. Nulla facilisi etiam dignissim diam quis. A erat nam at lectus urna duis convallis convallis tellus. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Vitae congue eu consequat ac felis donec. Molestie nunc non blandit massa enim. Tempus egestas sed sed risus pretium quam. Quisque non tellus orci ac auctor augue mauris augue. Egestas congue quisque egestas diam in arcu cursus euismod. Lacinia quis vel eros donec ac odio. Mauris ultrices eros in cursus turpis massa tincidunt. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Orci nulla pellentesque dignissim enim sit amet. Feugiat in ante metus dictum at tempor commodo ullamcorper a.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit laoreet id donec ultrices tincidunt arcu non. Vulputate ut pharetra sit amet. Ultricies leo integer malesuada nunc vel risus. Nulla facilisi etiam dignissim diam quis. A erat nam at lectus urna duis convallis convallis tellus. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Vitae congue eu consequat ac felis donec. Molestie nunc non blandit massa enim. Tempus egestas sed sed risus pretium quam. Quisque non tellus orci ac auctor augue mauris augue. Egestas congue quisque egestas diam in arcu cursus euismod. Lacinia quis vel eros donec ac odio. Mauris ultrices eros in cursus turpis massa tincidunt. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Orci nulla pellentesque dignissim enim sit amet. Feugiat in ante metus dictum at tempor commodo ullamcorper a.
+                    <div className='flex flex-col w-full smp:w-1/2 lg:w-3/5 h-72 smp:h-96 no-scrollbar overflow-auto text-lg'>
+                        <p>
+                            I’ve always been known as the “tech kid” of the family, the go-to person when someone needed to transfer 
+                            photos from an iPhone to a laptop. From a young age, I loved experimenting with computers. There’s something 
+                            so fascinating to me about accomplishing complex tasks with just a few clicks and keystrokes. 
+                        </p>
+                        <br></br>
+                        <p>
+                            My passion for technology never really found its way into the classroom and didn't initially prompt me to 
+                            consider it as a career option. I started as a business-preference major at Michigan State University in 
+                            2020—not because working in business was my dream, but because it seemed like the easiest and most conventional 
+                            path. Then, CSE 102 came along, an introductory Python course required for entry into the business college. 
+                            This class reignited my spark for computers and made me realize I was pretty good at programming. Within two 
+                            weeks, I switched my major to Computer Science, finally figuring out what I truly wanted to study.
+                        </p>
+                        <br></br>
+                        <p>
+                            Fast forward to today, I’m approaching my ninth and final semester at MSU, having developed a diverse 
+                            skill set and a multitude of interests, including full-stack development, object-oriented programming, 
+                            and more.
+                        </p>
+                        
+
                     </div>
                     <div className='flex w-full smp:w-1/2 lg:w-2/5 justify-center smp:justify-end items-center'>
                         <img src={pic1} alt="My dog, Lulu" className='w-64 smp:w-72 lg:w-80 rounded-lg shadow-lg'></img>

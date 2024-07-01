@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 
-// TODO : Fix sizing for XL screens
 const Home = () => {
     return (
         <motion.div className='flex flex-col md:flex-row items-center md:mx-32 gap-8 md:gap-5'
