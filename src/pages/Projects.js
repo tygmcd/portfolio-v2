@@ -100,7 +100,7 @@ const Projects = () => {
             initial="hidden"
             animate="visible"
             exit={{x: "-100vw", transition: { duration: 0.5 }}}
-            className="flex flex-col w-10/12 justify-center gap-12 my-16">
+            className="w-10/12 h-full flex flex-col mx-auto py-16 gap-8 justify-center">
                 <div className='flex flex-col items-center gap-3 mb-3'>
                     <h1 className='text-4xl sm:text-6xl'><b>Projects</b></h1>
                     <h3 className='text-xl md:text-2xl'>What I've been working on</h3>
@@ -108,7 +108,7 @@ const Projects = () => {
 
                 <motion.div 
                     variants={childVariants}
-                    className="absolute flex items-center justify-center rounded-t-lg text-lg top-[6.5rem] sm:top-[7.8rem] left-6 font-semibold w-32 h-10 backdrop-blur-lg bg-white/50">
+                    className="absolute flex items-center justify-center rounded-t-lg text-lg top-[9.5rem] sm:top-[10.8rem] left-6 font-semibold w-32 h-10 backdrop-blur-lg bg-white/50">
                     My Stack
                 </motion.div>
                 <div className='flex justify-center w-full rounded-xl backdrop-blur-lg bg-white/30 py-3 shadow-lg overflow-x-auto'>
