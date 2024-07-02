@@ -39,19 +39,19 @@ const About = () => {
             initial="hidden"
             animate="visible"
             exit={{x: "-100vw", transition: { duration: 0.5 }}}
-            className="flex flex-col w-10/12 justify-center gap-12 my-16">
-                <div className='flex flex-col items-center gap-2'>
+            className="w-10/12 h-full flex flex-col mx-auto py-16 justify-center">
+                <div className='flex flex-col items-center gap-3 p-4'>
                     <h1 className='text-4xl sm:text-6xl'><b>About Me</b></h1>
                     <h3 className='text-xl sm:text-2xl text-center'>A little bit of background on me</h3>
                 </div>
-                <div className='flex justify-center w-full rounded-xl backdrop-blur-lg bg-white/30 py-3 shadow-lg'>
+                <div className='flex justify-center w-full rounded-xl backdrop-blur-lg bg-white/30 p-4 shadow-lg'>
                     <div className='flex flex-col smp:flex-row justify-evenly w-full items-center'>
                         <motion.div variants={childVariants} className='text-lg md:text-xl lg:text-2xl flex gap-3 h-12 items-center'><IoLocation size={30} />Rochester Hills, MI</motion.div>
                         <motion.div variants={childVariants} className='text-lg md:text-xl lg:text-2xl flex gap-3 h-12 items-center'><IoMdSchool size={30} />Michigan State University</motion.div>
                         <motion.div variants={childVariants} className='text-lg md:text-xl lg:text-2xl flex gap-3 h-12 items-center'><MdWork size={30} />Stellantis</motion.div>
                     </div>
                 </div>
-                <div className='flex flex-col smp:flex-row w-full justify-center gap-10'>
+                <div className='flex flex-col smp:flex-row w-full justify-center gap-10 p-6'>
                     <div className='flex flex-col w-full smp:w-1/2 lg:w-3/5 h-72 smp:h-96 no-scrollbar overflow-auto text-lg'>
                         <p>
                             I’ve always been known as the “tech kid” of the family, the go-to person when someone needed to transfer 

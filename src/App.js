@@ -18,7 +18,7 @@ function App() {
     <div className='flex font-Poppins'>
       <MobileNav />
       <Navbar />
-      <div className='flex flex-col justify-around items-center overflow-y-auto w-screen h-screen bg-gradient-to-r from-primary to-secondary'>
+      <div className='w-screen bg-gradient-to-r from-primary to-secondary'>
           <AnimatePresence mode="wait">
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />
