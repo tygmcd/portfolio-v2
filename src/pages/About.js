@@ -52,7 +52,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='flex flex-col smp:flex-row w-full justify-center gap-10 p-6'>
-                    <div className='flex flex-col w-full smp:w-1/2 lg:w-3/5 h-72 smp:h-96 no-scrollbar overflow-auto text-lg'>
+                    <div className='flex flex-col w-full text-center smp:text-left smp:w-1/2 lg:w-3/5 h-72 smp:h-96 pr-6 overflow-auto text-lg'>
                         <p>
                             I’ve always been known as the “tech kid” of the family, the go-to person when someone needed to transfer 
                             photos from an iPhone to a laptop. From a young age, I loved experimenting with computers. There’s something 
