@@ -58,11 +58,13 @@ const Contact = () => {
                     <input className='w-10/12 md:w-1/2 bg-transparent border-b-2 border-black placeholder-black text-xl p-2 focus:outline-none' placeholder='Name' name='from_name'></input>
                     <input className='w-10/12 md:w-1/2 bg-transparent border-b-2 border-black placeholder-black text-xl p-2 focus:outline-none' placeholder='Email' name='from_email'></input>
                     <textarea className='w-10/12 md:w-1/2 h-52 bg-transparent border-2 border-black placeholder-black text-xl rounded-md p-3 mt-2 focus:outline-none' placeholder='Enter your message here...' name='message'></textarea>
-                    <motion.input whileHover={{ opacity: 0.7 }} className='w-2/3 md:w-1/2 h-14 bg-neutral-200 rounded-md shadow-md text-xl cursor-pointer' type="submit" value="Send"></motion.input>
+                    <motion.input whileHover={{ opacity: 0.7 }} className='w-10/12 md:w-1/2 h-14 bg-neutral-200 rounded-md shadow-md text-xl cursor-pointer' type="submit" value="Send"></motion.input>
+                    {  success && <motion.p initial="hidden" animate="visible" variants={containerVariants} className='text-xl text-green-600 font-bold'>Message sent successfully!</motion.p> }
+                    { failure && <motion.p initial="hidden" animate="visible" variants={containerVariants} className='text-xl text-red-600 font-bold'>Failed to send message!</motion.p> }
+
+
                 </form>
 
-                { success && <motion.p initial="hidden" animate="visible" variants={containerVariants} className='text-xl text-green-600 font-bold'>Message sent successfully!</motion.p> }
-                { failure && <motion.p initial="hidden" animate="visible" variants={containerVariants} className='text-xl text-red-600 font-bold'>Failed to send message!</motion.p> }
 
         </motion.div>
     );
