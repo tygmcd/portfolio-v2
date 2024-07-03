@@ -51,7 +51,7 @@ const About = () => {
                         <motion.div variants={childVariants} className='text-lg md:text-xl lg:text-2xl flex gap-3 h-12 items-center'><MdWork size={30} />Stellantis</motion.div>
                     </div>
                 </div>
-                <div className='flex flex-col smp:flex-row w-full justify-center gap-10 p-6'>
+                <div className='flex flex-col smp:flex-row w-full justify-center gap-10 py-6'>
                     <div className='flex flex-col w-full text-center smp:text-left smp:w-1/2 lg:w-3/5 h-72 smp:h-96 pr-6 overflow-auto text-lg'>
                         <p>
                             I’ve always been known as the “tech kid” of the family, the go-to person when someone needed to transfer 
