@@ -19,7 +19,7 @@ const containerVariants = {
 const NotFound = () => {
     return (
         <motion.div 
-            className="flex flex-col items-center gap-3"
+            className="flex flex-col items-center justify-center gap-3 h-screen"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
