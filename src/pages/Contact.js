@@ -15,6 +15,11 @@ const containerVariants = {
     }    
 };
 
+const apiKey = process.env.REACT_APP_EMAILJS_KEY 
+const service = process.env.REACT_APP_EMAILJS_SERVICE
+const template = process.env.REACT_APP_EMAILJS_TEMPLATE
+
+
 const Contact = () => {
     const form = useRef();
 
@@ -25,8 +30,8 @@ const Contact = () => {
         e.preventDefault();
     
         emailjs
-          .sendForm('service_dr5srbo', 'template_4yiq0nk', form.current, {
-            publicKey: 'djMbUMKsbPmbNk29X',
+          .sendForm(service, template, form.current, {
+            publicKey: apiKey
           })
           .then(
             () => {
