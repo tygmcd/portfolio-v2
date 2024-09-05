@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
-        <motion.div className='h-screen flex flex-col md:flex-row items-center justify-center md:mx-32 gap-8 md:gap-5'
+        <motion.div className='h-screen flex flex-col md:flex-row items-center justify-center sm:mx-32 xl:mx-auto gap-8 md:gap-5 md:max-w-[1100px]'
           initial={{x: "-100vw"}}
           animate={{x: 0}}
           transition={{duration: 0.5}}

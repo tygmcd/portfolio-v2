@@ -20,7 +20,8 @@ module.exports = {
       },
       screens : {
         'smp' : '1100px',
-        'pof' : '1335px'
+        'pof' : '1335px',
+        'xl' : '1500px'
       },
     },
   },
