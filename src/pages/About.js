@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 import { IoLocation } from "react-icons/io5";
 import { IoMdSchool } from "react-icons/io";
-import { MdWork } from "react-icons/md";
 
 // Framer Motion variants 
 const containerVariants = {
