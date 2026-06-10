@@ -19,7 +19,7 @@ const Home = () => {
               transition={{delay: 0.5, duration: 0.75}}>
                 <b>I'm Tyler McDonald</b>
             </motion.div>
-            <div className='text-2xl md:text-4xl'>A Senior Computer Science Student</div>
+            <div className='text-2xl md:text-4xl'>A Full Stack Software Engineer</div>
             <Link to="/projects">
               <motion.button className='w-56 h-14 mt-2 text-lg bg-neutral-200 rounded-lg shadow'
                 whileHover={{scale: 1.1, originX: 0}}>

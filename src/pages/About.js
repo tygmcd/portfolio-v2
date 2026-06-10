@@ -65,13 +65,6 @@ const About = () => {
                             This class reignited my spark for computers and made me realize I was pretty good at programming. Within two 
                             weeks, I switched my major to Computer Science, finally figuring out what I truly wanted to study.
                         </p>
-                        <br></br>
-                        <p>
-                            Fast forward to today, I’m approaching my ninth and final semester at MSU, having developed a diverse 
-                            skill set and a multitude of interests, including full-stack development, object-oriented programming, 
-                            and more.
-                        </p>
-                        
 
                     </div>
                     <div className='flex w-full smp:w-1/2 lg:w-2/5 justify-center smp:justify-end items-center'>
